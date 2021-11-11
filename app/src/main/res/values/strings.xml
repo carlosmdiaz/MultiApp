@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MultiApp</string>
+    <string name="weather_hint">Enter your location…</string>
+    <string name="start_scanning">Start Scanning</string>
+    <string name="button_text">DELETE</string>
+    <string name="txtview_example">Example</string>
+    <string name="check_list_title">To Do List</string>
+    <string name="set_time">Set Time For Alarm</string>
+    <string name="alarm_off">Alarm Off</string>
+    <string name="alarm_on">Alarm On</string>
+
+    />
+</resources>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_app"
+    tools:context=".MultiAppMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="106dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginEnd="98dp"
+
+                android:layout_marginRight="98dp"
+                android:gravity="center_vertical"
+                android:text="MultiApps"
+                android:textSize="40sp"
+                app:fontFamily="@font/pacifico"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <GridLayout
+    android:columnCount="2"
+    android:rowCount="3"
+    android:alignmentMode="alignMargins"
+    android:columnOrderPreserved="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/weather_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+        
+        
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/weather"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        
+        
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/check_list_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/check_list"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Check List"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/barcode_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bar_code"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Barcode Scanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/calculator_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/calculator"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/flashlight_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/flashlight"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Flashlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/alarm_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/alarm"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/calendar_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/calendar"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/where_am_i_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/gps"/>
+
+            <TextView
+
+                android:layout_marginTop="12dp"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp"
+                android:text="Where Am I?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    
+
+
+</GridLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+

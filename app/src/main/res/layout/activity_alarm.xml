@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AlarmActivity">
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="412dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorPrimary"
+        android:headerBackground="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/alarmSetTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/alarmOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="90dp"
+        android:background="@android:color/background_dark"
+        android:text="@string/alarm_on"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmSetTV" />
+
+    <Button
+        android:id="@+id/alarmOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/background_dark"
+        android:text="@string/alarm_off"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmSetTV" />
+
+    <TextView
+        android:id="@+id/alarmSetTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmOn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DF2196F3"
+    tools:context=".WeatherMainActivity">
+
+    <LinearLayout
+        android:id="@+id/weather_container"
+        android:layout_width="235dp"
+        android:layout_height="333dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|end"
+            android:paddingRight="12dp"
+            android:text="°F"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-36dp"
+            android:gravity="center_horizontal"
+            android:text="77"
+            android:textColor="@color/white"
+            android:textSize="72sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New York"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/weather_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sunny"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/wheather_image"
+            android:layout_width="219dp"
+            android:layout_height="139dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/sunny_01" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="309dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="29dp"
+        android:layout_weight=".75"
+        android:backgroundTint="@color/white"
+        android:hint="@string/weather_hint"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/transparentWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
